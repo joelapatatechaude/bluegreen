@@ -81,12 +81,16 @@
                 <td><?php echo $_SERVER['SERVER_ADDR'] ?></td>
               </tr>
               <tr>
-                <td>Pod name</td>
+                <td>Hostname</td>
                 <td><?php echo $_SERVER['SERVER_NAME'] ?></td>
               </tr>
               <tr>
                 <td>Pod Port</td>
                 <td><?php echo $_SERVER['SERVER_PORT'] ?></td>
+              </tr>
+              <tr>
+                <td>Color</td>
+                <td><?php echo $color ?></td>
               </tr>
             </tbody>
           </table>
@@ -109,3 +113,23 @@
     </script>
   </body>
 </html>
+
+
+<!-- <?php
+$deployment = getenv("COLOR");
+
+$deployment = getenv("COLOR");
+if ( $deployment == 'blue') {
+  $color = 'blue';
+} elseif ($deployment == 'green')  {
+  $color = 'green';
+} elseif ($deployment == 'yellow')  {
+  $color = 'yellow';
+} else {
+  $color = 'blue';
+}
+
+$data = [ 'color' => $deployment ];
+echo json_encode( $data );
+http_response_code(200);
+?> -->
