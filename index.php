@@ -81,6 +81,10 @@
                 <td><?php echo $_SERVER['SERVER_ADDR'] ?></td>
               </tr>
               <tr>
+                <td>Pod name</td>
+                <td><?php echo $_SERVER['SERVER_NAME'] ?></td>
+              </tr>
+              <tr>
                 <td>Pod Port</td>
                 <td><?php echo $_SERVER['SERVER_PORT'] ?></td>
               </tr>
